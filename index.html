@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div class="container-fluid bg-black top-banner">
+        <div class="row flex-row-reverse">
+            <div class="col-12 col-md-6"><img src="img/banner img.jpg" width="100%" alt="banner img"></div>
+            <div class="col-12 col-md-6"><span class="text-center text-white d-flex flex-column justify-content-center align-items-center p-5 h-100"><h1>Fall in Love with Coffee in Blissful Delight!</h1>
+                <p class="text-secondary">Welcome to our coffee cozy corner, where every drop is a delight for you.</p>
+                <a href="#shop" class="text-decoration-none text-white"><button class="btn fw-bold text-white w-md-90 p-2">Get Started</button></a></span></div>
+        </div>
+    </div>
+
+<div class="main">
+    <div class="contanier-fluid" id="shop">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-4">
+                    <div class="location p-3">
+                        <label for="locate" class="text-secondary mb-2">Location <i class="bi bi-geo-alt-fill ps-2"></i></label><br>
+                        <input list="locate-list" id="locate" name="locate" value="Karachi" class="border-0 text-white ps-0">
+                        <datalist id="locate-list">
+                            <option value="North Nazimabad, Karachi"></option>
+                            <option value="Nazimabad, Karachi"></option>
+                            <option value="Orangi Town, Karachi"></option>
+                            <option value="Liaquatabad, Karachi"></option>
+                            <option value="Hussainabad, Karachi"></option>
+                            <option value="Jauhar Town, Karachi"></option>
+                        </datalist>
+                    </div>
+                </div>
+
+            <div class="col-12 col-md-8">
+            <div class="search pb-4 ps-3 pt-md-5">
+                <div class="input-group" id="search">
+                    <span class="input-group-text bg-dark"><i class="bi bi-search text-secondary"></i></span>
+                    <input type="search" class="bg-dark text-white" placeholder="Search Coffee">
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+        <div class="free-coffee-banner">
+            <span class="badge bg-danger m-3 ms-sm-5 mb-1 mb-md-3">
+                Promo
+            </span>
+            <h3 class="text-white fs-1 fw-bold ps-sm-5 ps-3 free-coffee-banner-text">Buy one get one FREE</h3>
+            <div class="banner-img"><img src="img/coffee banner img.png" alt=""></div>
+        </div>
+        <div class="curvy-background">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" fill="#000">
+                <path d="M0 0v100c166.7 0 166.7-66 333.3-66S500 77 666.7 77 833.3 28 1000 28V0H0Z" opacity=".5"></path>
+                <path d="M0 0v100c166.7 0 166.7-66 333.3-66S500 70 666.7 70 833.3 16 1000 16V0H0Z" opacity=".5"></path>
+                <path d="M0 0v100c166.7 0 166.7-66 333.3-66S500 63 666.7 63 833.3 4 1000 4V0H0Z"></path>
+            </svg>
+        </div>
+    </div>
+    <div class="cart-container">
+        <span id="filter" data-bs-toggle="offcanvas" data-bs-target="#orderCart">
+            <img class="cart-streaks" src="img/menu.png" width="19" alt="">
+            <i class="bi bi-cart2"></i>
+        </span>
+    </div>
+    <div class="container" style="margin-top: 150px;">
+        <div class="row">
+            <div class="col-3">
+                <div class="coffee-type badge bg-warning">All Coffee
+                </div>
+            </div>
+            <div class="col-9">
+                <div class="coffee-list">
+                    <span>Machiato</span>
+                    <span>Espresso</span>
+                    <span>Cold_Brew</span>
+                    <span>Cappuccino</span>
+                    <span>Mocha</span>
+                    <span>Iced_Coffee</span>
+                    <span>Lattes</span>
+                    <span>Breve</span>
+                    <span>Americano</span>
+                    <span>Fredo</span>
+                    <span>Hot_Chocolate</span>
+                    <span>Frappe</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container product">
+        <div class="row">
+            <!-- pr1 -->
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="card">
+                    <div class="card-content">
+                        <img src="https://javryproduction.s3.amazonaws.com/posts/pictures/000/000/092/original/espresso-expresso.jpg?1506696539"  data-bs-target="#pr1" data-bs-toggle="modal" class="card-img" style="scale: 1.8;" alt="">
+                    </div>
+                </div>
+                <div class="details  px-1">
+                    <span class="fw-bold d-inline-block">Espresso</span>
+                    <button class="d-inline btn  btn-sm float-end my-2" data-bs-target="#pr1" data-bs-toggle="modal">Order</button>
+                    <span class="d-block">$4.99</span>
+                </div>
+            </div>
+            <!-- pr2 -->
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="card">
+                    <div class="card-content">
+                        <img src="https://taketea.ru/wp-content/uploads/6/2/4/62419a285e081ff69279bb1c7d47e619.jpeg" data-bs-target="#pr2" data-bs-toggle="modal" class="card-img"  style="scale: 1.2;" alt="">
+                    </div>
+                </div>
+                <div class="details  px-1">
+                    <span class="fw-bold d-inline-block">Breve</span>
+                    <button class="d-inline btn  btn-sm float-end my-2" data-bs-target="#pr2" data-bs-toggle="modal">Order</button>
+                    <span class="d-block">$2.00</span>
+                </div>
+            </div>
+            <!-- pr3 -->
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="card">
+                    <div class="card-content">
+                        <img src="https://avatars.mds.yandex.net/i?id=e28f85b4debb67a65c733183be087e39a9507c35-10962086-images-thumbs&n=13" data-bs-target="#pr3" data-bs-toggle="modal" class="card-img"  style="scale: 1.3;" alt="">
+                    </div>
+                </div>
+                 <div class="details  px-1">
+                    <span class="fw-bold d-inline-block">Latte</span>
+                    <button class="d-inline btn  btn-sm float-end my-2" data-bs-target="#pr3" data-bs-toggle="modal">Order</button>
+                    <span class="d-block">$3.29</span>
+                </div>
+            </div>
+            <!-- pr4 -->
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="card">
+                    <div class="card-content">
+                        <img src="https://lattelovebrew.com/wp-content/uploads/2022/08/A-Caramel-Macchiato.jpg" data-bs-target="#pr4" data-bs-toggle="modal" class="card-img" alt="">
+                    </div>
+                </div>
+                <div class="details  px-1">
+                    <span class="fw-bold d-inline-block">Machiato</span>
+                    <button class="d-inline btn  btn-sm float-end my-2" data-bs-target="#pr4" data-bs-toggle="modal">Order</button>
+                    <span class="d-block">$4.99</span>
+                </div>
+            </div>
+            <!-- pr5 -->
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="card">
+                    <div class="card-content">
+                        <img src="https://w.forfun.com/fetch/ad/adc1646423ec5f4d20e1019127564067.jpeg?w=1470&r=0.5625" data-bs-target="#pr5" data-bs-toggle="modal" class="card-img" style="scale: 1.4;" alt="">
+                    </div>
+                </div>
+                <div class="details px-1">
+                    <span class="fw-bold d-inline-block">Cold Brew</span>
+                    <button class="d-inline btn  btn-sm float-end my-2" data-bs-target="#pr5" data-bs-toggle="modal">Order</button>
+                    <span class="d-block">$5.80</span>
+                </div>
+            </div>
+            <!-- pr6 -->
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="card">
+                    <div class="card-content">
+                        <img src="https://avatars.mds.yandex.net/i?id=0b6a1377db91131606bca94099a821a8e5659ef2-10814230-images-thumbs&n=13" data-bs-target="#pr6" data-bs-toggle="modal" class="card-img" style="scale: 1.3;" alt="">
+                    </div>
+                </div>
+                <div class="details  px-1">
+                    <span class="fw-bold d-inline-block">Cappucino</span>
+                    <button class="d-inline btn  btn-sm float-end my-2" data-bs-target="#pr6" data-bs-toggle="modal">Order</button>
+                    <span class="d-block">$6.54</span>
+                </div>
+            </div>
+            <!-- pr7 -->
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="card">
+                    <div class="card-content">
+                        <img src="https://www.5things.in/wp-content/uploads/2016/03/cafe-mocha-1.jpg" data-bs-target="#pr7" data-bs-toggle="modal" class="card-img" style="scale: 1.1;" alt="">
+                    </div>
+                </div>
+                <div class="details  px-1">
+                    <span class="fw-bold d-inline-block">Mocha</span>
+                    <button class="d-inline btn  btn-sm float-end my-2" data-bs-target="#pr7" data-bs-toggle="modal">Order</button>
+                    <span class="d-block">$6.55</span>
+                </div>
+            </div>
+            <!-- pr8 -->
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="card">
+                    <div class="card-content">
+                        <img src="https://avatars.mds.yandex.net/i?id=a205a1060d111fc510962606aac076abc9a3fc85-12193070-images-thumbs&n=13"  data-bs-target="#pr8" data-bs-toggle="modal" class="card-img" style="scale: 1.2;" alt="">
+                    </div>
+                </div>
+                <div class="details  px-1">
+                    <span class="fw-bold d-inline-block">Iced Coffee</span>
+                    <button class="d-inline btn  btn-sm float-end my-2" data-bs-target="#pr8" data-bs-toggle="modal">Order</button>
+                    <span class="d-block">$4.11</span>
+                </div>
+            </div>
+            <!-- pr9 -->
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="card">
+                    <div class="card-content">
+                        <img src="https://static.tildacdn.com/tild3431-6639-4230-b337-393463303136/photo.jpg" data-bs-target="#pr9" data-bs-toggle="modal" class="card-img" style="scale: 1.3;" alt="">
+                    </div>                    
+                </div>
+                <div class="details  px-1">
+                    <span class="fw-bold d-inline-block">Frappe</span>
+                    <button class="d-inline btn  btn-sm float-end my-2" data-bs-target="#pr9" data-bs-toggle="modal">Order</button>
+                    <span class="d-block">$7.00</span>
+                </div>
+            </div>
+            <!-- pr10 -->
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="card">
+                    <div class="card-content">
+                        <img src="https://www.bestofathens.gr/sites/default/files/348183-722620.jpg" data-bs-target="#pr10" data-bs-toggle="modal" class="card-img ms-5 mb-3" style="scale: 1.35;" alt="">
+                    </div>                    
+                </div>
+                <div class="details  px-1">
+                    <span class="fw-bold d-inline-block">Fredo</span>
+                    <button class="d-inline btn  btn-sm float-end my-2" data-bs-target="#pr10" data-bs-toggle="modal">Order</button>
+                    <span class="d-block">$5.13</span>
+                </div>
+            </div>
+            <!-- pr11 -->
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="card">
+                    <div class="card-content">
+                        <img src="https://i.pinimg.com/originals/84/8f/93/848f93df53ebb12817346bea375c2e5a.jpg" data-bs-target="#pr11" data-bs-toggle="modal" class="card-img" style="scale: 1.2;" alt="">
+                    </div>                    
+                </div>
+                <div class="details  px-1">
+                    <span class="fw-bold d-inline-block">Americano</span>
+                    <button class="d-inline btn  btn-sm float-end my-2" data-bs-target="#pr11" data-bs-toggle="modal">Order</button>
+                    <span class="d-block">$3.15</span>
+                </div>
+            </div>
+            <!-- pr12 -->
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="card">
+                    <div class="card-content">
+                        <img src="https://www.thesun.co.uk/wp-content/uploads/2023/11/newspress-collage-24654802-1699349048816.jpg?1699349059&strip=all&quality=100&w=1920&h=1080&crop=1" data-bs-target="#pr12" data-bs-toggle="modal" class="card-img" style="scale: 1.35; margin-right: 30px;" alt="">
+                    </div>            
+                </div>
+                <div class="details px-1">
+                    <span class="fw-bold d-inline-block">Hot Chocolate</span>
+                    <button class="d-inline btn  btn-sm float-end my-2" data-bs-target="#pr12" data-bs-toggle="modal">Order</button>
+                    <span class="d-block">$4.30</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bgBox">
+        <div class="bg"></div>
+    </div>
+</div>
+<!-- MODALS -->
+ <div class="modal" id="pr1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header"><button class="btn-close" data-bs-dismiss="modal"></button></div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-6"><div class="img-container">
+                        <img src="https://javryproduction.s3.amazonaws.com/posts/pictures/000/000/092/original/espresso-expresso.jpg?1506696539" alt="">
+                    </div>
+                    </div>
+                    <div class="col-6">
+                        <h3 class="productName">Espresso</h3><p class="amount">4.99</p>
+                        <h6>AddOns:</h6>
+                        <form action="">
+                            <label for="cream1"><input type="checkbox" name="" id="cream1" class="me-2">Cream</label><br>
+                            <label for="sugar1"><input type="checkbox" name="" id="sugar1" class="me-2">Sugar</label><br><br>
+                            <div class="row">
+                                <div class="col-6 text-center"><input type="number" min="1" max="15" value="1" class="form-control qty" name="" ></div>
+                                <div class="col-6 text-center add-to-cart-btn"><button type="submit" class="btn">Add to Cart</button></div>
+
+                            </div>
+                        </form>
+                        <input class="text-success text-center mt-4 border order-value"  value="$ 4.99" maxlength="5" readonly="readonly" style="width: 95%;">
+                    </div>
+                </div>
+                <div class="container"><p class="py-4 text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit perspiciatis beatae expedita ea dolorem harum!</p></div>
+            </div>
+        </div>
+    </div>
+ </div>
+ <div class="modal" id="pr2">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header"><button class="btn-close" data-bs-dismiss="modal"></button></div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-6"><div class="img-container">
+                        <img src="https://taketea.ru/wp-content/uploads/6/2/4/62419a285e081ff69279bb1c7d47e619.jpeg" alt="">
+                    </div>
+                    </div>
+                    <div class="col-6">
+                        <h3 class="productName">Breve</h3><p class="amount">2.00</p>
+                        <h6>AddOns:</h6>
+                        <form action="">
+                            <label for="cream2"><input type="checkbox" name="" id="cream2" class="me-2">Cream</label><br>
+                            <label for="sugar2"><input type="checkbox" name="" id="sugar2" class="me-2">Sugar</label><br><br>
+                            <div class="row">
+                                <div class="col-6 text-center"><input type="number" min="1" max="15" value="1" class="form-control qty" name="" ></div>
+                                <div class="col-6 text-center add-to-cart-btn"><button type="submit" class="btn">Add to Cart</button></div>
+
+                            </div>
+                        </form>
+                        <input class="text-success text-center mt-4 border order-value"  value="$ 2.00" maxlength="5" readonly="readonly" style="width: 95%;">
+                    </div>
+                </div>
+                <div class="container"><p class="py-4 text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit perspiciatis beatae expedita ea dolorem harum!</p></div>
+            </div>
+        </div>
+    </div>
+ </div>
+ <div class="modal" id="pr3">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header"><button class="btn-close" data-bs-dismiss="modal"></button></div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-6"><div class="img-container">
+                        <img src="https://avatars.mds.yandex.net/i?id=e28f85b4debb67a65c733183be087e39a9507c35-10962086-images-thumbs&n=13" alt="">
+                    </div>
+                    </div>
+                    <div class="col-6">
+                        <h3 class="productName">Latte</h3><p class="amount">3.29</p>
+                        <h6>AddOns:</h6>
+                        <form action="">
+                            <label for="cream3"><input type="checkbox" name=""class="me-2" id="cream3">Cream</label><br>
+                            <label for="sugar3"><input type="checkbox" name=""class="me-2" id="sugar3">Sugar</label><br><br>
+                            <div class="row">
+                                <div class="col-6 text-center"><input type="number" min="1" max="15" value="1" class="form-control qty" name="" ></div>
+                                <div class="col-6 text-center add-to-cart-btn"><button type="submit" class="btn">Add to Cart</button></div>
+
+                            </div>
+                        </form>
+                        <input class="text-success text-center mt-4 border order-value"  value="$ 3.29" maxlength="5" readonly="readonly" style="width: 95%;">
+                    </div>
+                </div>
+                <div class="container"><p class="py-4 text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit perspiciatis beatae expedita ea dolorem harum!</p></div>
+            </div>
+        </div>
+    </div>
+ </div>
+ <div class="modal" id="pr4">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header"><button class="btn-close" data-bs-dismiss="modal"></button></div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-6"><div class="img-container">
+                        <img src="https://lattelovebrew.com/wp-content/uploads/2022/08/A-Caramel-Macchiato.jpg" alt="">
+                    </div>
+                    </div>
+                    <div class="col-6">
+                        <h3 class="productName">Machiato</h3><p class="amount">4.99</p>
+                        <h6>AddOns:</h6>
+                        <form action="">
+                            <label for="cream4"><input type="checkbox" name=""class="me-2" id="cream4">Cream</label><br>
+                            <label for="sugar4"><input type="checkbox" name=""class="me-2" id="sugar4">Sugar</label><br><br>
+                            <div class="row">
+                                <div class="col-6 text-center"><input type="number" min="1" max="15" value="1" class="form-control qty" name="" ></div>
+                                <div class="col-6 text-center add-to-cart-btn"><button type="submit" class="btn">Add to Cart</button></div>
+
+                            </div>
+                        </form>
+                        <input class="text-success text-center mt-4 border order-value"  value="$ 4.99" maxlength="5" readonly="readonly" style="width: 95%;">
+                    </div>
+                </div>
+                <div class="container"><p class="py-4 text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit perspiciatis beatae expedita ea dolorem harum!</p></div>
+            </div>
+        </div>
+    </div>
+ </div>
+ <div class="modal" id="pr5">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header"><button class="btn-close" data-bs-dismiss="modal"></button></div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-6"><div class="img-container">
+                        <img src="https://w.forfun.com/fetch/ad/adc1646423ec5f4d20e1019127564067.jpeg?w=1470&r=0.5625" alt="">
+                    </div>
+                    </div>
+                    <div class="col-6">
+                        <h3 class="productName">Cold Brew</h3><p class="amount">5.80</p>
+                        <h6>AddOns:</h6>
+                        <form action="">
+                            <label for="cream5"><input type="checkbox" name=""class="me-2" id="cream5">Cream</label><br>
+                            <label for="sugar5"><input type="checkbox" name=""class="me-2" id="sugar5">Sugar</label><br><br>
+                            <div class="row">
+                                <div class="col-6 text-center"><input type="number" min="1" max="15" value="1" class="form-control qty" name="" ></div>
+                                <div class="col-6 text-center add-to-cart-btn"><button type="submit" class="btn">Add to Cart</button></div>
+
+                            </div>
+                        </form>
+                        <input class="text-success text-center mt-4 border order-value"  value="$ 5.80" maxlength="5" readonly="readonly" style="width: 95%;">
+                    </div>
+                </div>
+                <div class="container"><p class="py-4 text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit perspiciatis beatae expedita ea dolorem harum!</p></div>
+            </div>
+        </div>
+    </div>
+ </div>
+ <div class="modal" id="pr6">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header"><button class="btn-close" data-bs-dismiss="modal"></button></div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-6"><div class="img-container">
+                        <img src="https://avatars.mds.yandex.net/i?id=0b6a1377db91131606bca94099a821a8e5659ef2-10814230-images-thumbs&n=13" alt="">
+                    </div>
+                    </div>
+                    <div class="col-6">
+                        <h3 class="productName">Cappucino</h3><p class="amount">6.54</p>
+                        <h6>AddOns:</h6>
+                        <form action="">
+                            <label for="cream6"><input type="checkbox" name=""class="me-2" id="cream6">Cream</label><br>
+                            <label for="sugar6"><input type="checkbox" name=""class="me-2" id="sugar6">Sugar</label><br><br>
+                            <div class="row">
+                                <div class="col-6 text-center"><input type="number" min="1" max="15" value="1" class="form-control qty" name="" ></div>
+                                <div class="col-6 text-center add-to-cart-btn"><button type="submit" class="btn">Add to Cart</button></div>
+
+                            </div>
+                        </form>
+                        <input class="text-success text-center mt-4 border order-value"  value="$ 6.54" maxlength="5" readonly="readonly" style="width: 95%;">
+                    </div>
+                </div>
+                <div class="container"><p class="py-4 text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit perspiciatis beatae expedita ea dolorem harum!</p></div>
+            </div>
+        </div>
+    </div>
+ </div>
+ <div class="modal" id="pr7">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header"><button class="btn-close" data-bs-dismiss="modal"></button></div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-6"><div class="img-container">
+                        <img src="https://www.5things.in/wp-content/uploads/2016/03/cafe-mocha-1.jpg" alt="">
+                    </div>
+                    </div>
+                    <div class="col-6">
+                        <h3 class="productName">Mocha</h3><p class="amount">6.55</p>
+                        <h6>AddOns:</h6>
+                        <form action="">
+                            <label for="cream7"><input type="checkbox" name=""class="me-2" id="cream7">Cream</label><br>
+                            <label for="sugar7"><input type="checkbox" name=""class="me-2" id="sugar7">Sugar</label><br><br>
+                            <div class="row">
+                                <div class="col-6 text-center"><input type="number" min="1" max="15" value="1" class="form-control qty" name="" ></div>
+                                <div class="col-6 text-center add-to-cart-btn"><button type="submit" class="btn">Add to Cart</button></div>
+
+                            </div>
+                        </form>
+                        <input class="text-success text-center mt-4 border order-value"  value="$ 6.55" maxlength="5" readonly="readonly" style="width: 95%;">
+                    </div>
+                </div>
+                <div class="container"><p class="py-4 text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit perspiciatis beatae expedita ea dolorem harum!</p></div>
+            </div>
+        </div>
+    </div>
+ </div>
+ <div class="modal" id="pr8">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header"><button class="btn-close" data-bs-dismiss="modal"></button></div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-6"><div class="img-container">
+                        <img src="https://avatars.mds.yandex.net/i?id=a205a1060d111fc510962606aac076abc9a3fc85-12193070-images-thumbs&n=13" alt="">
+                    </div>
+                    </div>
+                    <div class="col-6">
+                        <h3 class="productName">Iced Coffee</h3><p class="amount">4.11</p>
+                        <h6>AddOns:</h6>
+                        <form action="">
+                            <label for="cream8"><input type="checkbox" name=""class="me-2" id="cream8">Cream</label><br>
+                            <label for="sugar8"><input type="checkbox" name=""class="me-2" id="sugar8">Sugar</label><br><br>
+                            <div class="row">
+                                <div class="col-6 text-center"><input type="number" min="1" max="15" value="1" class="form-control qty" name="" ></div>
+                                <div class="col-6 text-center add-to-cart-btn"><button type="submit" class="btn">Add to Cart</button></div>
+
+                            </div>
+                        </form>
+                        <input class="text-success text-center mt-4 border order-value"  value="$ 4.11" maxlength="5" readonly="readonly" style="width: 95%;">
+                    </div>
+                </div>
+                <div class="container"><p class="py-4 text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit perspiciatis beatae expedita ea dolorem harum!</p></div>
+            </div>
+        </div>
+    </div>
+ </div>
+ <div class="modal" id="pr9">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header"><button class="btn-close" data-bs-dismiss="modal"></button></div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-6"><div class="img-container">
+                        <img src="https://static.tildacdn.com/tild3431-6639-4230-b337-393463303136/photo.jpg" alt="">
+                    </div>
+                    </div>
+                    <div class="col-6">
+                        <h3 class="productName">Frappe</h3><p class="amount">7.00</p>
+                        <h6>AddOns:</h6>
+                        <form action="">
+                            <label for="cream9"><input type="checkbox" name=""class="me-2" id="cream9">Cream</label><br>
+                            <label for="sugar9"><input type="checkbox" name=""class="me-2" id="sugar9">Sugar</label><br><br>
+                            <div class="row">
+                                <div class="col-6 text-center"><input type="number" min="1" max="15" value="1" class="form-control qty" name="" ></div>
+                                <div class="col-6 text-center add-to-cart-btn"><button type="submit" class="btn">Add to Cart</button></div>
+
+                            </div>
+                        </form>
+                        <input class="text-success text-center mt-4 border order-value"  value="$ 7.00" maxlength="5" readonly="readonly" style="width: 95%;">
+                    </div>
+                </div>
+                <div class="container"><p class="py-4 text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit perspiciatis beatae expedita ea dolorem harum!</p></div>
+            </div>
+        </div>
+    </div>
+ </div>
+ <div class="modal" id="pr10">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header"><button class="btn-close" data-bs-dismiss="modal"></button></div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-6"><div class="img-container">
+                        <img src="https://www.bestofathens.gr/sites/default/files/348183-722620.jpg" class="ms-5 mb-4" style="scale: 1.2;" alt="">
+                    </div>
+                    </div>
+                    <div class="col-6">
+                        <h3 class="productName">Fredo</h3><p class="amount">5.13</p>
+                        <h6>AddOns:</h6>
+                        <form action="">
+                            <label for="cream10"><input type="checkbox" name=""class="me-2" id="cream10">Cream</label><br>
+                            <label for="sugar10"><input type="checkbox" name=""class="me-2" id="sugar10">Sugar</label><br><br>
+                            <div class="row">
+                                <div class="col-6 text-center"><input type="number" min="1" max="15" value="1" class="form-control qty" name="" ></div>
+                                <div class="col-6 text-center add-to-cart-btn"><button type="submit" class="btn">Add to Cart</button></div>
+
+                            </div>
+                        </form>
+                        <input class="text-success text-center mt-4 border order-value"  value="$ 5.13" maxlength="5" readonly="readonly" style="width: 95%;">
+                    </div>
+                </div>
+                <div class="container"><p class="py-4 text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit perspiciatis beatae expedita ea dolorem harum!</p></div>
+            </div>
+        </div>
+    </div>
+ </div>
+ <div class="modal" id="pr11">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header"><button class="btn-close" data-bs-dismiss="modal"></button></div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-6"><div class="img-container">
+                        <img src="https://i.pinimg.com/originals/84/8f/93/848f93df53ebb12817346bea375c2e5a.jpg" alt="">
+                    </div>
+                    </div>
+                    <div class="col-6">
+                        <h3 class="productName">Americano</h3><p class="amount">3.15</p>
+                        <h6>AddOns:</h6>
+                        <form action="">
+                            <label for="cream11"><input type="checkbox" name=""class="me-2" id="cream11">Cream</label><br>
+                            <label for="sugar11"><input type="checkbox" name=""class="me-2" id="sugar11">Sugar</label><br><br>
+                            <div class="row">
+                                <div class="col-6 text-center"><input type="number" min="1" max="15" value="1" class="form-control qty" name="" ></div>
+                                <div class="col-6 text-center add-to-cart-btn"><button type="submit" class="btn">Add to Cart</button></div>
+
+                            </div>
+                        </form>
+                        <input class="text-success text-center mt-4 border order-value"  value="$ 3.15" maxlength="5" readonly="readonly" style="width: 95%;">
+                    </div>
+                </div>
+                <div class="container"><p class="py-4 text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit perspiciatis beatae expedita ea dolorem harum!</p></div>
+            </div>
+        </div>
+    </div>
+ </div>
+ <div class="modal" id="pr12">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header"><button class="btn-close" data-bs-dismiss="modal"></button></div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-6"><div class="img-container">
+                        <img src="https://www.thesun.co.uk/wp-content/uploads/2023/11/newspress-collage-24654802-1699349048816.jpg?1699349059&strip=all&quality=100&w=1920&h=1080&crop=1" class="me-5" alt="">
+                    </div>
+                    </div>
+                    <div class="col-6">
+                        <h3 class="productName">Hot Chocolate</h3><p class="amount">4.30</p>
+                        <h6>AddOns:</h6>
+                        <form action="">
+                            <label for="cream12"><input type="checkbox"class="me-2" name="" id="cream12">Cream</label><br>
+                            <label for="sugar12"><input type="checkbox"class="me-2" name="" id="sugar12">Sugar</label><br><br>
+                            <div class="row">
+                                <div class="col-6 text-center"><input type="number" min="1" max="15" value="1" class="form-control qty" name="" ></div>
+                                <div class="col-6 text-center add-to-cart-btn"><button type="submit" class="btn">Add to Cart</button></div>
+
+                            </div>
+                        </form>
+                        <input class="text-success text-center mt-4 border order-value"  value="$ 4.30" maxlength="5" readonly="readonly" style="width: 95%;">
+                    </div>
+                </div>
+                <div class="container"><p class="py-4 text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit perspiciatis beatae expedita ea dolorem harum!</p></div>
+            </div>
+        </div>
+    </div>
+ </div>
+<!-- ORDER CARD -->
+ <div class="order-card" id="order-card">
+ </div>
+ <!-- CART OFFCANVAS -->
+ <div class="offcanvas offcanvas-end" tabindex="-1" id="orderCart">
+    <div class="offcanvas-header">
+      <h3 class="offcanvas-title">Cart</h3>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div id="cart-items">
+      </div>
+      <div id="total-amount" class="text-success"></div>
+    </div>
+    <div class="offcanvas-footer d-grid">
+        <button class="btn mx-4 text-white d-block" id="place-order">Place Order</button>
+        <button class="btn mx-4 my-3 bg-warning text-white d-block" id="empty-cart">Empty Cart</button>
+    </div>
+  </div>
+
+  <div class="cart-alert"><h5 class="text-success text-center">Added To Cart Successfully</h5></div>
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+</html>

@@ -269,27 +269,41 @@
 }
 .order-card{
     position: fixed;
-    top: 10%;
-    padding: 30px;
+    top: 30%;
+    padding: 50px;
     border-radius: 10px;
     box-shadow: 0 0 500px 20px black;
     transform: translateX(30%);
     display: none;
-    /* opacity: 0; */
+    /* opacity: 0.8; */
     transition: .5s ease all;
     background-color: white;
     z-index: 5000;
     width: 60vw;
     min-width: 300px;
     height: auto;
-    max-height: 400px;
+    max-height: 500px;
     overflow-y: auto;
+    color: black;
+    text-shadow: 0 0 1px black;
+    border: 2px solid black;
     /* display: flex; */
 }
 #close-order-card{
     position: absolute;
     right: 20px;
     top: 40px;
+}
+#confirmOrder{
+    display: block;
+    margin: 50px auto 10px;
+    padding: 10px 40px;
+    background-color: black;
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: 10px;
+    min-width: 200px;
 }
 .order-items{
     /* border: 2px solid green; */

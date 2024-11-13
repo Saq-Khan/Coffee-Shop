@@ -247,7 +247,8 @@ function displayCartItems() {
             <br><br>
             <h6 class="d-inline">Location:</h6>
             <span>${inLocation}</span><br><br>
-            <div class="order-items">${orderCardValue}</div><br>${orderCardAmount}`;
+            <div class="order-items">${orderCardValue}</div><br>${orderCardAmount}<br>
+            <button id="confirmOrder">Place Order</button>`;
 
         orderCard.innerHTML = orderCardIsFull;
 
@@ -263,6 +264,21 @@ function displayCartItems() {
           });
           placeOrderButton.setAttribute('data-event-added', 'true');
         }
+
+            // SWEET ALERT ON ORDER CONFIRMATION
+    let orderConfirm = document.getElementById('confirmOrder')
+
+    if(orderConfirm)
+    {orderConfirm.addEventListener('click', function(){
+        orderCard.style.display = 'none'
+        Swal.fire({
+    position: "center",
+    icon: "success",
+    title: "Your order has been placed!",
+    showConfirmButton: false,
+    timer: 2500
+    })
+    })}
         closeOrderCard();
 }
 
@@ -275,6 +291,8 @@ function closeOrderCard() {
         });
     }
 }
+
+
 
 // Call the function to display the cart items when the page loads
 displayCartItems();

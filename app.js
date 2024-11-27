@@ -293,6 +293,57 @@ function closeOrderCard() {
 }
 
 
+let searchFeild = document.getElementById('search-feild');
+let searchBtn = document.getElementById('search-btn');
+
+searchFeild.addEventListener('input', ()=>{
+
+    document.querySelector('.coffee-list-container').innerHTML = null
+
+    if(searchFeild.value == ''){
+        document.querySelectorAll('.coffee').forEach((coffee)=>{
+         coffee.style.display = 'block'
+     })
+     }
+
+    else if(new RegExp('[m]', 'i').test(searchFeild.value)){
+        document.querySelectorAll('.coffee').forEach((coffee)=>{
+         coffee.style.display = 'none'
+     })
+     document.querySelector('.machiato').style.display= 'block'
+     document.querySelector('.mocha').style.display= 'block'
+     }
+
+     else if(new RegExp('[id]', 'i').test(searchFeild.value)){
+        document.querySelectorAll('.coffee').forEach((coffee)=>{
+         coffee.style.display = 'none'
+     })
+     document.querySelector('.iced-coffee').style.display= 'block'
+     }
+     else if(new RegExp('[e]', 'i').test(searchFeild.value)){
+        document.querySelectorAll('.coffee').forEach((coffee)=>{
+         coffee.style.display = 'none'
+     })
+     document.querySelector('.espresso').style.display= 'block'
+     }
+     else if(new RegExp('[c]', 'i').test(searchFeild.value)){
+        document.querySelectorAll('.coffee').forEach((coffee)=>{
+         coffee.style.display = 'none'
+     })
+     document.querySelector('.iced-coffee').style.display= 'block'
+     document.querySelector('.cold-brew').style.display= 'block'
+     document.querySelector('.cappucino').style.display= 'block'
+     }
+     else if(new RegExp('[f]', 'i').test(searchFeild.value)){
+        document.querySelectorAll('.coffee').forEach((coffee)=>{
+         coffee.style.display = 'none'
+     })
+     document.querySelector('.frappe').style.display= 'block'
+     document.querySelector('.fredo').style.display= 'block'
+     }
+
+})
+
 
 // Call the function to display the cart items when the page loads
 displayCartItems();

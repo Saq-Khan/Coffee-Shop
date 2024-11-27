@@ -45,8 +45,8 @@
             <div class="col-12 col-md-8">
             <div class="search pb-4 ps-3 pt-md-5">
                 <div class="input-group" id="search">
-                    <span class="input-group-text bg-dark"><i class="bi bi-search text-secondary"></i></span>
-                    <input type="search" class="bg-dark text-white" placeholder="Search Coffee">
+                    <span class="input-group-text bg-dark" id="search-btn"><i class="bi bi-search text-secondary"></i></span>
+                    <input type="search" class="bg-dark text-white" placeholder="Search Coffee" id="search-feild">
                 </div>
             </div>
         </div>
@@ -73,7 +73,7 @@
             <i class="bi bi-cart2"></i>
         </span>
     </div>
-    <div class="container" style="margin-top: 150px;">
+    <div class="container coffee-list-container" style="margin-top: 150px;">
         <div class="row">
             <div class="col-3">
                 <div class="coffee-type badge bg-warning">All Coffee
@@ -101,7 +101,7 @@
     <div class="container product">
         <div class="row">
             <!-- pr1 -->
-            <div class="col-6 col-md-4 col-lg-3">
+            <div class="col-6 col-md-4 col-lg-3 coffee espresso">
                 <div class="card">
                     <div class="card-content">
                         <img src="https://javryproduction.s3.amazonaws.com/posts/pictures/000/000/092/original/espresso-expresso.jpg?1506696539"  data-bs-target="#pr1" data-bs-toggle="modal" class="card-img" style="scale: 1.8;" alt="">
@@ -114,7 +114,7 @@
                 </div>
             </div>
             <!-- pr2 -->
-            <div class="col-6 col-md-4 col-lg-3">
+            <div class="col-6 col-md-4 col-lg-3 coffee breve">
                 <div class="card">
                     <div class="card-content">
                         <img src="https://taketea.ru/wp-content/uploads/6/2/4/62419a285e081ff69279bb1c7d47e619.jpeg" data-bs-target="#pr2" data-bs-toggle="modal" class="card-img"  style="scale: 1.2;" alt="">
@@ -127,7 +127,7 @@
                 </div>
             </div>
             <!-- pr3 -->
-            <div class="col-6 col-md-4 col-lg-3">
+            <div class="col-6 col-md-4 col-lg-3 coffee latte">
                 <div class="card">
                     <div class="card-content">
                         <img src="https://avatars.mds.yandex.net/i?id=e28f85b4debb67a65c733183be087e39a9507c35-10962086-images-thumbs&n=13" data-bs-target="#pr3" data-bs-toggle="modal" class="card-img"  style="scale: 1.3;" alt="">
@@ -140,7 +140,7 @@
                 </div>
             </div>
             <!-- pr4 -->
-            <div class="col-6 col-md-4 col-lg-3">
+            <div class="col-6 col-md-4 col-lg-3 coffee machiato">
                 <div class="card">
                     <div class="card-content">
                         <img src="https://lattelovebrew.com/wp-content/uploads/2022/08/A-Caramel-Macchiato.jpg" data-bs-target="#pr4" data-bs-toggle="modal" class="card-img" alt="">
@@ -153,7 +153,7 @@
                 </div>
             </div>
             <!-- pr5 -->
-            <div class="col-6 col-md-4 col-lg-3">
+            <div class="col-6 col-md-4 col-lg-3 coffee cold-brew">
                 <div class="card">
                     <div class="card-content">
                         <img src="https://shottbeverages.com/wp-content/uploads/2019/10/Hazelnut-Cold-Brew.jpg" data-bs-target="#pr5" data-bs-toggle="modal" class="card-img" style="scale: 1.6; padding-right: 30px;" alt="">
@@ -166,7 +166,7 @@
                 </div>
             </div>
             <!-- pr6 -->
-            <div class="col-6 col-md-4 col-lg-3">
+            <div class="col-6 col-md-4 col-lg-3 coffee cappucino">
                 <div class="card">
                     <div class="card-content">
                         <img src="https://avatars.mds.yandex.net/i?id=0b6a1377db91131606bca94099a821a8e5659ef2-10814230-images-thumbs&n=13" data-bs-target="#pr6" data-bs-toggle="modal" class="card-img" style="scale: 1.3;" alt="">
@@ -179,7 +179,7 @@
                 </div>
             </div>
             <!-- pr7 -->
-            <div class="col-6 col-md-4 col-lg-3">
+            <div class="col-6 col-md-4 col-lg-3 coffee mocha">
                 <div class="card">
                     <div class="card-content">
                         <img src="https://www.5things.in/wp-content/uploads/2016/03/cafe-mocha-1.jpg" data-bs-target="#pr7" data-bs-toggle="modal" class="card-img" style="scale: 1.1;" alt="">
@@ -192,7 +192,7 @@
                 </div>
             </div>
             <!-- pr8 -->
-            <div class="col-6 col-md-4 col-lg-3">
+            <div class="col-6 col-md-4 col-lg-3 coffee iced-coffee">
                 <div class="card">
                     <div class="card-content">
                         <img src="https://avatars.mds.yandex.net/i?id=a205a1060d111fc510962606aac076abc9a3fc85-12193070-images-thumbs&n=13"  data-bs-target="#pr8" data-bs-toggle="modal" class="card-img" style="scale: 1.2;" alt="">
@@ -205,7 +205,7 @@
                 </div>
             </div>
             <!-- pr9 -->
-            <div class="col-6 col-md-4 col-lg-3">
+            <div class="col-6 col-md-4 col-lg-3 coffee frappe">
                 <div class="card">
                     <div class="card-content">
                         <img src="https://static.tildacdn.com/tild3431-6639-4230-b337-393463303136/photo.jpg" data-bs-target="#pr9" data-bs-toggle="modal" class="card-img" style="scale: 1.3;" alt="">
@@ -218,7 +218,7 @@
                 </div>
             </div>
             <!-- pr10 -->
-            <div class="col-6 col-md-4 col-lg-3">
+            <div class="col-6 col-md-4 col-lg-3 coffee fredo">
                 <div class="card">
                     <div class="card-content">
                         <img src="https://www.bestofathens.gr/sites/default/files/348183-722620.jpg" data-bs-target="#pr10" data-bs-toggle="modal" class="card-img ms-5 mb-3" style="scale: 1.35;" alt="">
@@ -231,7 +231,7 @@
                 </div>
             </div>
             <!-- pr11 -->
-            <div class="col-6 col-md-4 col-lg-3">
+            <div class="col-6 col-md-4 col-lg-3 coffee americano">
                 <div class="card">
                     <div class="card-content">
                         <img src="https://i.pinimg.com/originals/84/8f/93/848f93df53ebb12817346bea375c2e5a.jpg" data-bs-target="#pr11" data-bs-toggle="modal" class="card-img" style="scale: 1.2;" alt="">
@@ -244,7 +244,7 @@
                 </div>
             </div>
             <!-- pr12 -->
-            <div class="col-6 col-md-4 col-lg-3">
+            <div class="col-6 col-md-4 col-lg-3 coffee hot-chocolate">
                 <div class="card">
                     <div class="card-content">
                         <img src="https://www.thesun.co.uk/wp-content/uploads/2023/11/newspress-collage-24654802-1699349048816.jpg?1699349059&strip=all&quality=100&w=1920&h=1080&crop=1" data-bs-target="#pr12" data-bs-toggle="modal" class="card-img" style="scale: 1.35; margin-right: 30px;" alt="">

@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap');
 .top-banner{
     display: flex;
     flex-direction: column;
@@ -7,6 +8,9 @@
     height: 100vh;
     object-fit: contain;
     border-bottom: 11px solid black;
+}
+.top-banner h1{
+    font-family: "Aboreto", system-ui;
 }
 .top-banner button{
     background-color: #9F755B;
@@ -93,11 +97,15 @@
 }
 .free-coffee-banner-text{
     /* text-shadow: 0 8px 10px rgba(0, 0, 0, 0.937); */
-    font-size: 2.5em;
+    font-size: 2em;
+    padding: 20px;
+    margin-top:-15px !important;
+    font-family: "Aboreto", system-ui;
+    /* font-style: bold; */
 }
 .banner-img img{
     position: absolute;
-    right: -8%;
+    right: -12%;
     top: 10%;
     rotate: 180deg;
     filter:drop-shadow(0 -8px 10px rgba(0, 0, 0, 0.937));
@@ -365,7 +373,8 @@
         margin-top: 0px;
     }
     .free-coffee-banner-text{
-        width: 380px;
+        /* width: 380px; */
+        font-size: 1.9em;
     }   
     .cart-container{
         height: 220%;
@@ -380,12 +389,23 @@
         width: 90vw;
         padding: 30px;
     }
+    .banner-img img{
+        width: 120px;
+    }
+    .free-coffee-banner-text{
+        font-size: 1.6em;
+
+    }  
 }
 @media screen and (max-width:570px){
     .free-coffee-banner-text{
-        width: 300px;
-        font-size: 1.8em;
+        /* width: 350px; */
+        font-size: 1.5em;
+        margin-top: -20px !important;
     } 
+    .banner-img img{
+        top: 39%;
+    }
     .col-6 .details{
     opacity: 1;
     transform: translateY(0);
@@ -410,16 +430,18 @@
         right: 4px;
         bottom: -4px;
     }
-    .banner-img img{
-        width: 100px;
-        right: -15%;
-        top: 15%;
-    }
     .free-coffee-banner{
         height: 120px;
     }
+    .banner-img img{
+        width: 100px;
+        right: -18%;
+        top: 5%;
+    }
     .free-coffee-banner-text{
-        width: 200px;
+        width: 100%;
+        margin-top: -42px !important;
+        margin-left: 30px !important;
         } 
     .product .card{
          width: 170px;

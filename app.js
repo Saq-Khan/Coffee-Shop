@@ -270,7 +270,9 @@ function displayCartItems() {
 
     if(orderConfirm)
     {orderConfirm.addEventListener('click', function(){
-        orderCard.style.display = 'none'
+        orderCard.style.display = 'none';
+        localStorage.removeItem("CartItems");
+        displayCartItems();
         Swal.fire({
     position: "center",
     icon: "success",
@@ -341,7 +343,18 @@ searchFeild.addEventListener('input', ()=>{
      document.querySelector('.frappe').style.display= 'block'
      document.querySelector('.fredo').style.display= 'block'
      }
-
+     else if(new RegExp('[latte]', 'i').test(searchFeild.value)){
+        document.querySelectorAll('.coffee').forEach((coffee)=>{
+         coffee.style.display = 'none'
+     })
+     document.querySelector('.latte').style.display= 'block'
+     }
+     else if(new RegExp('[ho]', 'i').test(searchFeild.value)){
+        document.querySelectorAll('.coffee').forEach((coffee)=>{
+         coffee.style.display = 'none'
+     })
+     document.querySelector('.hot-chocolate').style.display= 'block'
+     }
 })
 
 
